@@ -1,0 +1,24 @@
+.page-header { margin: 15px 0 10px 0; padding: 0; border: none; }
+.page-header h1 { display: block; color: #23527c; margin: 0 15px 0 0; padding: 0; width: auto; 
+line-height: 36px; font-size: 26px; }
+.page-header h1 small { font-size: 15px; }
+
+.filter-form .form-control { padding-left: 8px; padding-right: 8px; width: auto; }
+.page-alert { padding-top: 8px; padding-bottom: 8px; margin: 15px 0; }
+
+.datalist-table { margin-top: 15px; }
+.datalist-table .good-cover { display: block; width: 100px; border: 1px solid #dedede; }
+.datalist-table .good-cover img { width: 100%; height: auto; }
+.datalist-table h4 { margin: 0; padding: 0; font-size: 13px; font-weight: 600; }
+.datalist-table td p { margin: 0; font-size: 12px !important; line-height: 22px; }
+.datalist-table td .label { font-size: 11px !important; filter: alpha(opacity=70); opacity: 0.7; }
+.datalist-table tbody tr td { padding-top: 10px; padding-bottom: 10px; }
+.datalist-table .btn-group { }
+.datalist-table .btn-group .btn { font-size: 18px; white-space: normal; line-height: normal; padding: 0 12px; 
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); color: #999; }
+.datalist-table .btn-group .btn small { display: block; margin: 0 -5px 0 -5px; font-size: 13px; }
+.datalist-table .btn-group .btn small label { margin: 0 5px; }
+.datalist-table .btn-group .btn:hover,.datalist-table .btn-group .btn:active,
+.datalist-table .btn-group .btn:focus { color: #337ab7; }
+
+.btn-export-download { margin: 5px 0; }

@@ -1,0 +1,77 @@
+body { background: #ededed; overflow-x: hidden; overflow-y: scroll; }
+body.has-tguser { padding-bottom: 55px !important; }
+
+/*顶部图标隐藏*/
+.global-nav.fxd a.back,
+.global-nav.fxd .popup,
+.global-nav.fxd .logo,
+.global-nav.fxd .sub-menu,
+.global-nav.fxd .refresh {
+   display: none !important;
+}
+/*category-menus*/
+.category-menus {}
+.category-menus.fixed { position: fixed; left: 0; top: 0; right: 0; z-index: 2000; }
+.category-menus .container .category-menuwrapper { background-color: #fff; padding: 0;  margin: 0 -15px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+.category-menus .menu { padding: 0; background: #631f82; overflow-x: auto; overflow-y: hidden; border-bottom: 1px solid #dedede; -ms-overflow-style: -ms-autohiding-scrollbar; }
+.category-menus .menu ul { list-style: none outside; margin: 0; padding: 0; display: table-row; }
+.category-menus .menu ul li { display: table-cell; text-align: center; font-size: 14px; }
+.category-menus .menu ul li a { display: block; color: #666; padding: 10px 20px; text-align: center; color: #fff; text-decoration: none; white-space: nowrap; }
+.category-menus .menu ul li a img { display: block; margin: 0 auto 5px auto; height: 20px; width: 20px; }
+.category-menus .menu ul li.active a,
+.category-menus .menu ul li a:hover,
+.category-menus .menu ul li a:active,
+.category-menus .menu ul li a:focus { background: #05c78a; }
+
+.category-menus .submenu { padding: 0; background: #fff; overflow-x: auto; overflow-y: hidden; border-bottom: 1px solid #dedede; -ms-overflow-style: -ms-autohiding-scrollbar; }
+.category-menus .submenu ul { list-style: none outside; margin: 0; padding: 0; display: table-row; }
+.category-menus .submenu ul li { display: table-cell; text-align: center; font-size: 14px; }
+.category-menus .submenu ul li a { display: block; color: #333; padding: 0 20px; line-height: 36px; border-bottom: 3px solid #fff; text-align: center; text-decoration: none; white-space: nowrap; }
+.category-menus .submenu ul li.active a,
+.category-menus .submenu ul li a:hover,
+.category-menus .submenu ul li a:active,
+.category-menus .submenu ul li a:focus { color: #ff3133; border-bottom-color: #ff3133; }
+
+.category-menus .orderby { padding: 0; background: #fff; border-bottom: 1px solid #dedede; }
+.category-menus .orderby ul { list-style: none outside; margin: 0; padding: 0; display: table; width: 100%; }
+.category-menus .orderby ul li { display: table-cell; text-align: center; font-size: 14px; }
+.category-menus .orderby ul li a { display: block; color: #333; padding: 0 15px; line-height: 42px; border-bottom: 3px solid #fff; text-align: center; text-decoration: none; white-space: nowrap; }
+.category-menus .orderby ul li.active a,
+.category-menus .orderby ul li a:hover,
+.category-menus .orderby ul li a:active,
+.category-menus .orderby ul li a:focus { color: #ff3133; border-bottom-color: #ff3133; }
+
+/*good-lists*/
+.good-lists { margin: 4px -15px 0 -15px; background: none; position: relative; overflow: hidden; }
+.good-lists .row { margin: 0 -4px; padding: 1px 0 0 0; }
+.good-lists .well { background: #fff; margin: -1px -15px 0 -16px; padding: 5px; border-radius: 0; 
+border: 4px solid #ededed; 
+-webkit-box-shadow: none; box-shadow: none; display: block; position: relative; }
+.good-lists .well .goods-link { display: block !important; position: absolute; z-index: 20; cursor: pointer; left: 0; top: 0; right: 0; bottom: 0; }
+
+.good-lists .well h4 { display: block; margin: 0; padding: 0; font-size: 14px; font-weight: 500; line-height: 22px; }
+.good-lists .well h4 a { color: #333; }
+.good-lists .well h4 a:hover,.good-lists .well h4 a:active,.good-lists .well h4 a:focus { color: #23527c; }
+.good-info { margin-top: 5px; line-height: 22px; margin-bottom: -5px; }
+.good-lists .well .good-cover { display: block; margin: 0; width: 100%; padding-bottom: 100%; height: 0; position: relative; overflow: hidden; }
+.good-lists .well .good-cover img { display: block; height: 100%; position: absolute; left: 0; top: 0; }
+.good-lists .well .good-cover.good-isnew:before,
+.good-lists .well .good-cover.good-soldout:before { display: block; background: #ff5c5c; padding: 2px 4px; font-size: 12px; border-radius: 0 0 0 5px; color: #fff;
+ z-index: 10; position: absolute; right: 0; top: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+.good-lists .well .good-cover.good-isnew:before { content: '新品上架'; background: #5cb85c; }
+.good-lists .well .good-cover.good-soldout:before { content: '暂抢光'; background: #ff5c5c; }
+.good-lists .well p { display: block; height: auto !important; overflow: hidden !important;  }
+.good-lists .well .good-price { float: left; margin-right: 15px; }
+.good-lists .well .good-price em { font-size: 14px; color: #f00; font-style: normal; font-weight: 600; }
+.good-lists .well .good-info { text-align: left; }
+
+/*.learn-more*/
+.learn-more { margin: 0 -15px; }
+.learn-more .btn-success { border-radius: 0; background: #05c78a; border-color: rgba(0, 0, 0, 0.05); }
+.learn-more .btn-success:hover,
+.learn-more .btn-success:active,
+.learn-more .btn-success:focus { background: #04a673; border-color: rgba(0, 0, 0, 0.01); }
+.learn-more .btn-success.disabled { background: #eee !important; color: #666 !important; }
+/*scroll-nav*/
+.scroll-nav { margin-bottom: 12px; }

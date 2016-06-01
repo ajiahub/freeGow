@@ -1,0 +1,29 @@
+.comment-form { margin-left: -5px; margin-right: -5px; padding-bottom: 15px; }
+.comment-images { margin: -5px -5px 10px -5px; }
+.comment-images li { display: block; position: relative; float: left; width: 20%; height: 0; padding: 0 0 20% 0; }
+.comment-images li .comment-image { position: absolute; left: 5px; top: 5px; bottom: 5px; right: 5px; border: 2px dashed #e0e0e0; }
+.comment-images li .add-btn { width: 100%; height: 100%; font-size: 22px; background: #fff; border: none;  position: absolute; top: 50; left: 0; 
+cursor: pointer; }
+.comment-images li iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.comment-images li .comment-image .comment-img { display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 20; }
+.comment-images li .comment-image .comment-img img { width: 100%; height: 100%; }
+.comment-images li .comment-image .comment-img-close { width: 24px; line-height: 24px; border-radius: 12px; background: #f00; 
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.2); position: absolute; top: -6px; right: -6px; z-index: 30; 
+text-align: center; color: #fff; }
+.comment-images li .comment-image .comment-img-close:hover,.comment-images li .comment-image .comment-img-close:active,
+.comment-images li .comment-image .comment-img-close:focus { color: rgba(255, 255, 255, 0.7); }
+
+.upload-progress { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000; }
+.upload-progress p { color: #fff; display: block; margin: 0; line-height: 50px; position: fixed; top: 50%; left: 0; right: 0; z-index: 1010;
+text-align: center; font-size: 16px; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+
+.comment-replys { background: #f6f6f6; padding: 0; border-top: 1px solid #eee; }
+.comment-replys li { padding: 5px 8px; border-bottom: 1px solid #eee; }
+.comment-replys p { margin: 0 !important; padding: 0; }
+.comment-replys li .comment-pics { margin-top: 5px; }
+.comment-pics { display: block; margin: 0; padding: 0 0 5px 0; }
+
+.comment-heading { padding-bottom: 5px; }
+.rate-label { font-weight: normal; font-size: 11px !important; padding: 0 4px; }
+.rate-label.rate-danger { border: 1px solid #f60; color: #f60; background: #fff; }
+.rate-label.rate-default { border: 1px solid #999; color: #888; background: #fff; }

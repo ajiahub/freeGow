@@ -1,0 +1,54 @@
+.page-header { margin: 15px 0 10px 0; padding: 0; border: none; }
+.page-header h1 { display: block; color: #23527c; margin: 0 15px 0 0; padding: 0; width: auto; 
+line-height: 36px; font-size: 26px; }
+
+.alert-msg { margin: 10px 0 -5px 0;  }
+
+.goodlist-table { margin-top: 15px; }
+.goodlist-table .good-cover { display: block; width: 80px; border: 1px solid #dedede; }
+.goodlist-table .good-cover img { width: 100%; height: auto; }
+.goodlist-table h4 { margin: 0 0 10px 0; padding: 0; font-size: 14px; font-weight: bold; }
+.goodlist-table td p { margin: 0; font-size: 12px !important; line-height: 22px; }
+.goodlist-table td .label { font-size: 10px !important; padding: 0 2px; font-weight: normal; filter: alpha(opacity=60); opacity: 0.6; }
+.goodlist-table tbody tr td { padding-top: 10px; padding-bottom: 10px; }
+
+.goodlist-table .btn-group { }
+.goodlist-table .btn-group .btn { font-size: 18px; white-space: normal; line-height: normal; padding: 0 12px; 
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); color: #999; }
+.goodlist-table .btn-group .btn small { display: block; margin: 0 -5px 0 -5px; font-size: 13px; }
+.goodlist-table .btn-group .btn small label { margin: 0 5px; }
+.goodlist-table .btn-group .btn:hover,.goodlist-table .btn-group .btn:active,.goodlist-table .btn-group .btn:focus { color: #337ab7; }
+
+.good-form { padding-bottom: 20px; }
+.good-form .form-group { margin-bottom: 10px; }
+.good-form .form-group .control-label { font-weight: normal; color: #666; }
+.spec-Form .form-group { margin-bottom: 10px; }
+.spec-Form .form-group .control-label { font-weight: normal; color: #666; }
+
+.good-tabs { margin: -5px 0 -11px 0; }
+.good-tabs li a { background: transparent; color: #333; border-radius: 0; padding-left: 20px; padding-right: 20px; border: 1px solid #dedede; 
+border-top: 3px solid #dedede; border-bottom: 1px solid #dedede; font-size: 16px; background: rgba(0, 0, 0, 0.03); }
+.good-tabs li.active a,.good-tabs li a:hover,.good-tabs li a:active,.good-tabs li a:focus { border-top-color: #337ab7; 
+background: #fff !important; border-bottom: 1px solid #fff; color: #333 !important; }
+
+.good-form .help-block { font-size: 12px; line-height: 20px; }
+.good-image-lists { margin: -5px; }
+.good-image-lists li { width: 130px; display: inline-block; margin: 5px; }
+.good-image-lists li img { width: 100%; height: auto; margin-bottom: 5px; }
+
+
+/*datalist-table*/
+.datalist-table { margin-top: 15px; }
+.datalist-table .good-cover { display: block; width: 100px; border: 1px solid #dedede; }
+.datalist-table .good-cover img { width: 100%; height: auto; }
+.datalist-table h4 { margin: 0; padding: 0; font-size: 13px; font-weight: 600; }
+.datalist-table td p { margin: 0; font-size: 12px !important; line-height: 22px; }
+.datalist-table td .label { font-size: 11px !important; filter: alpha(opacity=70); opacity: 0.7; }
+.datalist-table tbody tr td { padding-top: 10px; padding-bottom: 10px; }
+
+/*upload Form*/
+.uploadForm { }
+.spec-form .uploadForm { border: 1px solid #dedede; padding: 10px; }
+.uploadForm p { line-height: 20px; font-size: 12px; }
+.uploadForm .imgfile { width: 160px; display: inline-block; }
+.uploadForm .imgfile .thumbnail { margin: 5px; }

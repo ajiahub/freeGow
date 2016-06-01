@@ -1,0 +1,27 @@
+body { background: #653366; }
+h1{color:#fff;}
+.login-wrapper { margin-top: 20px; padding: 25px; background: #f6f6f6; border: 1px solid #e0e0e0;  }
+.left-gg{margin-top:20px;padding:25px;}
+.gg-info{margin-left:60px;}
+.gg-info ul{list-style:none outside !important;margin:0px 5px;padding:0;}
+.gg-info ul li{text-align:left;}
+.gg-info ul li .title{font-size:70px;}
+.gg-info ul li h2{font-size:14px;color:#CC99CC;}
+.price h2{color:#fff;font-size:40px;}
+.login-wrapper h2 { margin-top: 0; font-size: 18px; color: #666; font-weight: 500; }
+.download{text-align:left;}
+.download h2{font-size:15px;color:#fff;}
+.login-wrapper .control-label { color: #454545; font-weight: normal; }
+.login-wrapper .help-block { font-size: 13px; }
+
+.price_cd{border:1px solid #fff;background-color:#653366;}
+.gobuy{background-color:#F39801;color:#fff;width:150px;font-size:17px;}
+.download-btn{background-color:#2EA7E0;color:#fff;width:45%;font-size:22px;}
+.download-btn img{margin-left:20px;}
+
+.left-gg-bottom{margin-top:100px;}
+.left-gg-bottom ul{list-style:none outside !important;margin:0px 5px;padding:0;}
+.left-gg-bottom ul li{text-align:right;margin-right:20%;}
+.left-img-info{z-index:9999999;}
+.lgzs_png{margin-top:0px;}
+#one{z-index:9999;position:relative;}

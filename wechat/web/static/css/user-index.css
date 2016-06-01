@@ -1,0 +1,23 @@
+/*user-header*/
+.user-header { overflow: hidden; background: #ffbf6b; position: relative; border: none; border-radius: 10px; padding: 12px 15px; position: relative; }
+.user-header:before { display: block; content: ''; position: absolute; right: 15px; top: 8px;
+width: 45px; height: 45px; border-radius: 45px;  background: rgba(255,255,255,0.1); box-shadow: 0 0 0.6rem rgba(250,0,0,0.15); }
+.user-header:after { display: block; content: ''; position: absolute; right: 45px; top: 35px;
+width: 30px; height: 30px; border-radius: 30px;  background: rgba(255,255,255,0.06); box-shadow: 0 0 0.6rem rgba(250,0,0,0.1); }
+.user-header .user-avatar { display: block; width: 60px; height: 60px; border-radius: 32px; border: 2px solid #fff; overflow: hidden; }
+.user-header .user-avatar img { width: 100%; height: 100%; }
+.user-header .media-body p { color: #fff; margin-bottom: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+.user-header .subscribe-label { background: rgba(0, 0, 0, 0.25); display: inline-block; font-size: 11px !important; line-height: normal; padding: 1px 4px; border-radius: 5px; }
+
+.user-header .user-topmenu { margin: 12px -15px -12px -15px;  background: rgba(255, 255, 255, 0.5); }
+.user-header ul { margin: 0; padding: 0; list-style: none outside;
+display: -moz-box; display: -webkit-box; display: box; width: 100%; }
+.user-header ul li { -moz-box-flex: 1; -webkit-box-flex: 1; box-flex: 1; text-align: center;  }
+.user-header ul li .badge { position:absolute; left: 60%; top: 6px; z-index: 10; }
+.user-header ul li img { max-width: 60%; display: block; margin: 0 auto 5px auto; }
+.user-header ul li a { display: block; padding: 8px 0 5px 0; font-size: 11px; position: relative; }
+.user-header ul li a .badge { background-color: #ec5151; }
+
+.user-list-group a { color: #333; font-size: 15px }
+.user-list-group a:hover,.user-list-group a:active,.user-list-group a:focus { color: #555; }
+.user-list-group .badge { background: #ec5151 !important; float: right; }

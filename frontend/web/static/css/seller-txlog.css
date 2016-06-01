@@ -1,0 +1,6 @@
+.page-header { margin: 15px 0 10px 0; padding: 0; border: none; }
+.page-header h1 { display: block; color: #23527c; margin: 0 15px 0 0; padding: 0; width: auto; 
+line-height: 36px; font-size: 26px; }
+.page-header h1 small { font-size: 15px; }
+
+.datalist-table { margin-top: 10px; }

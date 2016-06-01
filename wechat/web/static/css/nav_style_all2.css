@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+/* SunBlacker Tang */
+
+/* Style reset - 把此部分样式直接剪切到模板页CSS头部中 */
+*{box-sizing:border-box}
+html{color:#000;background:#f2f2f2;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; min-width:300px}
+html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0); text-decoration:none}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+abbr,acronym{border:0;font-variant:normal}
+del{text-decoration:line-through}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:300}
+q:before,q:after{content:''}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+ins,a{text-decoration:none}
+
+/* 调试样式，上线后可以删除 */
+
+
+/* Quotes style */
+.tc{text-align:center}
+.pr{position:relative}
+.pa{position:absolute}
+.db{display:block}
+.dib{display:inline-block}
+.hide-font{text-indent:-9999px}
+.clr{clear:both; overflow:hidden}
+.dn{display: none}
+
+/* Nav basic style */
+nav{background:#fff; height:48px; border-bottom:solid 1px #ccc; width:100%;z-index: 99;padding: 0 50px;}
+	nav > a{width:48px; height:48px;  position:absolute; top:0; z-index:100}
+	nav a.back,nav a.menu,nav a.refresh{border-radius:100%}
+	nav > a:hover{background-color:#f2f2f2}
+	nav a.back{background:url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232566left_icon.png') 50% no-repeat; background-size:14px auto !important; opacity:0.8; left:-2px}
+	nav a.menu{right:0; background:url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232587menu.png') 50% no-repeat; background-size:24px auto !important; opacity:0.8; top:0; width:48px; height:48px; position:absolute; z-index:100}
+	nav a.refresh{right:50px; background:url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232602refresh.png') 50% no-repeat; background-size:24px auto !important; opacity:0.8}
+	nav h1{ display: block;height: 48px;overflow:hidden;text-align:center; line-height:48px; font-size:17px; color:#111;}
+	nav img.logo{height:24px; background:none; position:absolute; top: 12px; left:40px; z-index:10}
+
+	/* Nav dropdown menu style */
+	nav div.sub-menu{height:50px; overflow:hidden; width:48px; position:absolute; top:0; right:10px}
+	nav div.sub-menu.onfocus{height:100%; overflow:visible}
+	nav div.show{overflow:visible;}
+		nav .sub-menu ul{width:120px; border:solid 1px #ccc; border-radius:3px; position:absolute; top:65px; right:5px; background:#fff; box-shadow:0 1px 3px #ccc;z-index: 100;}
+		nav .sub-menu ul:before{content:" "; position:absolute; top:-17px; right:7px; border-width:8px; border-style:solid; border-color:transparent transparent #ccc}
+			nav .sub-menu ul li{border-bottom:solid 1px #ddd; text-align:center; font-size:14px}
+			nav .sub-menu ul li:last-child{border:none}
+				nav .sub-menu ul li a{height:40px; line-height:44px; color:#444; display:block}
+	
+/* Nav slide style */
+nav.fxd{background:none; border:none}
+	nav.fxd h1{display:none}
+	nav.fxd > a{top:10px; width:40px; height:40px}
+	nav.fxd a.refresh{right:60px; background:#333 url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232649refresh_w.png') 50% no-repeat; top:10px; width:40px; height:40px;display: none;}
+	nav.fxd a.back{left:10px; background:#333 url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232618left_icon_w.png') 50% no-repeat;width:35px; height:35px;}
+	nav.fxd a.menu{right:6px; background:#333 url('http://7xt1hu.com1.z0.glb.clouddn.com/1461232636menu_w.png') 50% no-repeat; top:10px; width:35px; height:35px;}
+	nav.fxd img.logo{display:none}
+	nav.fxd .sub-menu{}
+	
+.popup{width: 100%; height: 100%;position: fixed;z-index: 99;display: none;}
+.no-background{position:fixed;}

@@ -1,0 +1,21 @@
+.page-header { margin: 15px 0 10px 0; padding: 0; border: none; }
+.page-header h1 { display: block; color: #23527c; margin: 0 15px 0 0; padding: 0; width: auto; 
+line-height: 36px; font-size: 26px; }
+.page-header h1 small { font-size: 15px; }
+
+.home-wrapper { display: table; width: 100%; border-top: 1px solid #dedede; }
+.home-row { display: table-row; }
+.home-col { display: table-cell; vertical-align: top; border-bottom: 1px solid #dedede; border-right: 1px solid transparent;
+ width: 50%; padding: 15px; }
+.home-row .home-col:nth-child(odd) { border-right-color: #dedede; }
+@media (max-width: 767px) {
+	.home-wrapper, .home-row, .home-col { display: block; width: 100%; border-right: none; }
+}
+.home-col h3 { margin-top: 0; border-left: 5px solid #337ab7; color: #333; font-weight: 500; font-size: 18px; padding: 0 15px; }
+.home-contacts { line-height: 24px; margin: 0; }
+
+.home-col .badge.badge-red { background: #f00; }
+
+.btn-good-static { background: #f6f6f6; color: #337ab7; }
+.btn-good-static .badge { background: #337ab7; color: #fff; }
+.btn-good-static:hover,.btn-good-static:active,.btn-good-static:focus { color: #286090; background: #fff; }
