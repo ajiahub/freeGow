@@ -15,6 +15,7 @@ use yii\helpers\ArrayHelper;
  * This is the model class for table "goods".
  *
  * @property string $goods_id
+ * @property string $userid
  * @property string $username
  * @property string $image_id
  * @property string $default_image_id
@@ -47,7 +48,7 @@ class Goods extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['goods_name', 'username', 'image_id', 'default_image_id', 'goods_title', 'goods_des', 'area_id', 'cat_id', 'sc_price', 'price', 'wl_price', 'goods_stock', 'goods_cur_stock', 'pt_price'], 'required'],
+            [['goods_name', 'userid', 'username', 'image_id', 'default_image_id', 'goods_title', 'goods_des', 'area_id', 'cat_id', 'sc_price', 'price', 'wl_price', 'goods_stock', 'goods_cur_stock', 'pt_price'], 'required'],
             [['default_image_id', 'area_id', 'cat_id', 'sc_price', 'price', 'wl_price', 'goods_stock', 'goods_cur_stock', 'pt_price', 'status', 'click'], 'integer'],
             [['image_id'], 'string', 'max' => 50],
             [['goods_name', 'username', 'goods_title'], 'string', 'max' => 100],
@@ -67,6 +68,7 @@ class Goods extends \yii\db\ActiveRecord
     {
         return [
             'goods_id' => 'Goods ID',
+            'userid' => 'Userid',
             'username' => 'Username',
             'image_id' => 'Image ID',
             'default_image_id' => 'Default Image Id',

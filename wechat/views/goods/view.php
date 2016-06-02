@@ -1,6 +1,8 @@
 <?php
+use yii\helpers\Html;
 use common\components\ResizeImage;
 use yii\widgets\ActiveForm;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -102,7 +104,7 @@ use yii\widgets\ActiveForm;
                         <?php foreach ($model->goodsImage as $key => $value): ?>
                             <li id="zuhe-<?= $value->image_id ?>"
                                 style="display: table-cell; vertical-align: top; width: 360px; "><img
-                                    src="<?= ResizeImage::resize($model->username,$value->image,620,620) ?>"></li>
+                                    src="<?= ResizeImage::resize($model->username, $value->image, 620, 620) ?>"></li>
                         <?php endforeach ?>
                     </ul>
                 </div>
@@ -152,73 +154,71 @@ use yii\widgets\ActiveForm;
     </div>
 </div>
 <div class="seller-service">
-    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=568621896&amp;site=qq&amp;menu=yes"><img src="/static/images/static/zixun.jpg" alt="在线咨询"></a>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=568621896&amp;site=qq&amp;menu=yes"><img
+            src="/static/images/static/zixun.jpg" alt="在线咨询"></a>
 </div>
 <div class="container">
-    <?php $form = ActiveForm::begin(['action'=>'/purchase/','options'=>['name'=>'ECS_FORMBUY','id'=>'ECS_FORMBUY']]); ?>
-        <input type="hidden" name="wl_price" id="wl_price" value="22"> <input type="hidden" name="quantity"
-                                                                              id="quantity" value="1" min="1" max="0">
-        <input type="hidden" name="g_id" id="g_id" value="74253"> <input type="hidden" name="goods_id" id="goods_id"
-                                                                         value="74337">
-        <input type="hidden" name="spec_id" id="spec_id" value="59859">
+    <?php $form = ActiveForm::begin(['action' => '/cart/create']); ?>
+    <?= Html::hiddenInput('goods_id', $model->goods_id) ?>
+    <?= Html::hiddenInput('userid', $model->userid) ?>
 
-        <!--
-        <div class="panel panel-default good-select">
-            <div class="panel-heading">
-                <h3 class="panel-title">规格选择</h3>
-            </div>
-            <div class="panel-body">
-                          <div class="form-group zuhe-attr1">
-                    <div class="good-zu">
-                                        <span data-good-id="74337" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="483" data-spec-id="59859" id="spec-0" class="active">K9660大红色1件</span>
-
-
-                                        <span data-good-id="74340" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="495" data-spec-id="59862" id="spec-1">K9660黑色1件</span>
-
-
-                                        <span data-good-id="74345" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="485" data-spec-id="59866" id="spec-2">K966肤色1件</span>
-
-
-                                        <span data-good-id="74348" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59869" id="spec-3">K966粉红色1件</span>
-
-
-                                    </div>
-                </div>
-                        <div class="form-group zuhe-attr2">
-                                <div class="good-zuinfo clearfix" id="goodzu-0" style="">
-                                        <span data-good-id="74337" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="483" data-spec-id="59859" class="active">S</span>
-                                        <span data-good-id="74338" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="490" data-spec-id="59860">M</span>
-                                        <span data-good-id="74339" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="493" data-spec-id="59861">L</span>
-                                    </div>
-                                <div class="good-zuinfo clearfix hide" id="goodzu-1" style="display: none; ">
-                                        <span data-good-id="74340" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="495" data-spec-id="59862">S</span>
-                                        <span data-good-id="74342" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="492" data-spec-id="59864">M</span>
-                                        <span data-good-id="74343" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="486" data-spec-id="59865">L</span>
-                                    </div>
-                                <div class="good-zuinfo clearfix hide" id="goodzu-2" style="display: none; ">
-                                        <span data-good-id="74345" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="485" data-spec-id="59866">S</span>
-                                        <span data-good-id="74346" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="478" data-spec-id="59867">M</span>
-                                        <span data-good-id="74347" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="465" data-spec-id="59868">L</span>
-                                    </div>
-                                <div class="good-zuinfo clearfix hide" id="goodzu-3" style="display: none; ">
-                                        <span data-good-id="74348" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59869">S</span>
-                                        <span data-good-id="74349" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59870">M</span>
-                                        <span data-good-id="74350" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59871">L</span>
-                                    </div>
-                            </div>
-                      </div>
+    <!--
+    <div class="panel panel-default good-select">
+        <div class="panel-heading">
+            <h3 class="panel-title">规格选择</h3>
         </div>
-        -->
-        <div class="good-action container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <button class="btn btn-lg btn-block btn-buy" type="submit">立即领取</button>
-                </div>
+        <div class="panel-body">
+                      <div class="form-group zuhe-attr1">
+                <div class="good-zu">
+                                    <span data-good-id="74337" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="483" data-spec-id="59859" id="spec-0" class="active">K9660大红色1件</span>
+
+
+                                    <span data-good-id="74340" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="495" data-spec-id="59862" id="spec-1">K9660黑色1件</span>
+
+
+                                    <span data-good-id="74345" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="485" data-spec-id="59866" id="spec-2">K966肤色1件</span>
+
+
+                                    <span data-good-id="74348" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59869" id="spec-3">K966粉红色1件</span>
+
+
+                                </div>
+            </div>
+                    <div class="form-group zuhe-attr2">
+                            <div class="good-zuinfo clearfix" id="goodzu-0" style="">
+                                    <span data-good-id="74337" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="483" data-spec-id="59859" class="active">S</span>
+                                    <span data-good-id="74338" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="490" data-spec-id="59860">M</span>
+                                    <span data-good-id="74339" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="493" data-spec-id="59861">L</span>
+                                </div>
+                            <div class="good-zuinfo clearfix hide" id="goodzu-1" style="display: none; ">
+                                    <span data-good-id="74340" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="495" data-spec-id="59862">S</span>
+                                    <span data-good-id="74342" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="492" data-spec-id="59864">M</span>
+                                    <span data-good-id="74343" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="486" data-spec-id="59865">L</span>
+                                </div>
+                            <div class="good-zuinfo clearfix hide" id="goodzu-2" style="display: none; ">
+                                    <span data-good-id="74345" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="485" data-spec-id="59866">S</span>
+                                    <span data-good-id="74346" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="478" data-spec-id="59867">M</span>
+                                    <span data-good-id="74347" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="465" data-spec-id="59868">L</span>
+                                </div>
+                            <div class="good-zuinfo clearfix hide" id="goodzu-3" style="display: none; ">
+                                    <span data-good-id="74348" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59869">S</span>
+                                    <span data-good-id="74349" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59870">M</span>
+                                    <span data-good-id="74350" data-price="0" data-scprice="39" data-wlprice="22" data-good-stock="5000" data-good-nowstock="0" data-spec-id="59871">L</span>
+                                </div>
+                        </div>
+                  </div>
+    </div>
+    -->
+    <div class="good-action container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-lg btn-block btn-buy" type="submit">立即领取</button>
             </div>
         </div>
+    </div>
     <?php ActiveForm::end(); ?>
 
-<?= $this->render('_goods_recommend',['otherGoods'=>$otherGoods]); ?>
+    <?= $this->render('_goods_recommend', ['otherGoods' => $otherGoods]); ?>
 
     <div class="good-guarantee color-333">微信支付商家,正品保证,假一罚三,七天无条件退换货。</div>
 
@@ -250,7 +250,7 @@ use yii\widgets\ActiveForm;
             </div>
             <div role="tabpanel" class="tab-pane fade in" id="comments">
                 <ul class="list-unstyled comments-lists">
-				<li>暂无评论</li>
+                    <li>暂无评论</li>
                 </ul>
             </div>
 
@@ -268,10 +268,10 @@ use yii\widgets\ActiveForm;
                         <tbody>
                         <tr>
                             <td colspan="5">
-							暂无成交记录
+                                暂无成交记录
                             </td>
                         </tr>
-                       
+
                         </tbody>
                     </table>
                 </div>

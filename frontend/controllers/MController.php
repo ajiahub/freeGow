@@ -32,6 +32,15 @@ class MController extends Controller
     }
 
     /**
+     * 获取当前用户ID
+     * @return mixed
+     */
+    public function getUserid()
+    {
+        return Yii::$app->user->identity->userid;
+    }
+
+    /**
      * 获取当前用户名
      * @return mixed
      */

@@ -86,11 +86,11 @@ class GoodsController extends MController
             */
             $posts = Yii::$app->request->post();
             $posts['Goods']['image_id'] = implode(',', $posts['image_id']);
+            $posts['Goods']['userid'] = $this->userid;
             $posts['Goods']['username'] = $this->username;
             $posts['Goods']['default_image_id'] = (int)(!empty($posts['default_image_id']) ? $posts['default_image_id'] : $posts['image_id'][0]);
             if ($model->load($posts)) {
                 if ($model->validate()) {
-
                     if ($model->save()) {
                         $_POST['GoodsContent'] = ['goods_id' => $model->goods_id, 'content' => $_POST['content']];
                         $content->load($_POST);
